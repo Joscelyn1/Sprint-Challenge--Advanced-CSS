@@ -1,1 +1,39 @@
 // Navigation code here
+
+body header {
+
+
+    .title {
+        .flexCenter();
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    nav {
+        .flexCenter();
+
+
+        a {
+            .removeFontStyling();
+            padding: 1rem;
+        }
+
+    }
+
+    .jumboPictureContainer {
+        .flexCenter();
+
+
+
+        .jumboPicture {
+            @media @tablet {
+                max-width: 100%;
+            }
+
+            @media @phone {
+                max-width: none;
+                width: 100%;
+            }
+        }
+    }
+}

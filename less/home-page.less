@@ -2,6 +2,10 @@
 
 .home {
 
+  .btn {
+    .button-styling(6rem, 2rem, @btn-bg-color, white, 5px);
+  }
+
   .intro {
 
     h2 {
@@ -19,11 +23,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky {
+        @media @phone {
+          display: none;
+        }
+      }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -46,8 +65,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 2rem;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
+
+
 
       h3 {
         margin-bottom: 10px;
@@ -64,6 +93,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0;
+
+      }
       
       img {
         width: 100%;
