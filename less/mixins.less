@@ -5,3 +5,20 @@
     justify-content: center;
     align-items: center;
 }
+
+.removeFontStyling {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button-styling(@width, @height, @color, @text-color, @border-radius){
+    width: @width;
+    height: @height;
+	background-color: @color;
+    color: @text-color;
+    text-align: center;
+    .flexCenter();
+    border-radius: @border-radius;
+}
+
+

@@ -14,8 +14,7 @@ body header {
 
 
         a {
-            color: inherit;
-            text-decoration: none;
+            .removeFontStyling();
             padding: 1rem;
         }
 
@@ -23,5 +22,11 @@ body header {
 
     .jumboPictureContainer {
         .flexCenter();
+
+        .jumboPicture {
+            @media @tablet {
+                max-width: 100%;
+            }
+        }
     }
 }
