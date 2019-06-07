@@ -219,6 +219,10 @@ footer {
   align-items: center;
   border-radius: 5px;
 }
+.home .btn:hover {
+  background-color: white;
+  color: #22283A;
+}
 .home .intro h2 {
   padding: 15px;
 }
