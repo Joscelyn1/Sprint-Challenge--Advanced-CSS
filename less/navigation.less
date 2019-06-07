@@ -23,9 +23,16 @@ body header {
     .jumboPictureContainer {
         .flexCenter();
 
+
+
         .jumboPicture {
             @media @tablet {
                 max-width: 100%;
+            }
+
+            @media @phone {
+                max-width: none;
+                width: 100%;
             }
         }
     }
